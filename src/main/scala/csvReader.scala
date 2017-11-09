@@ -47,7 +47,7 @@ object SparkUtils {
 //      .set("spark.driver.memory","500MB")
 
     lazy val sc = SparkSession.builder()
-      .appName("Abc data collection with Spark SQL")
+      .appName("Read csv data collection with Spark SQL")
       .config("spark.master", "local")
       .config(sparkConf)
       .getOrCreate()
